@@ -2,286 +2,308 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png">
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap4" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link rel="stylesheet" href="CSS/style.css">
-    <link href="style.css" rel="stylesheet">
-    <title>Furni design</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link href="style.css" rel="stylesheet">
+	<title>Furni design</title>
 </head>
+
 <body>
 	<!-- Start Header Section -->
 	<header class="header">
-		<div class="header-left">
-		  <div class="logo">
-			<h1 class="logo-text">
-			  <span class="logo-text-amber">BE</span>
-			  <span class="logo-text-gray">FURNITURE</span>
-			</h1>
-			<p class="logo-subtext">Furniture For Everyone</p>
-		  </div>
-	
-		  <nav class="nav">
-			<div class="nav-item group">
-			  <a href="#" class="nav-link nav-link-amber">
-				Home
-				<i class="fas fa-chevron-down nav-icon"></i>
-			  </a>
-			  <div class="nav-underline"></div>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<div class="logo navbar-brand">
+					<h1 class="logo-text">
+						<span class="logo-text-amber">BE</span>
+						<span class="logo-text-gray">FURNITURE</span>
+					</h1>
+					<p class="logo-subtext">Furniture For Everyone</p>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav m-auto  ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-link-amber" href="#" >Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="#">Blog</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button" 
+								data-toggle="dropdown" aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">My Account</a></li>
+									<li><a class="dropdown-item" href="#">For Sales</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="#">Services..</a></li>
+								  </ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="#">Contact Us</a>
+						</li>
+					</ul>
+					<div class="header-right ms-auto">
+						<button aria-label="Search" class="icon-button" onclick="openSearch()">
+							<i class="fas fa-search icon"></i>
+						</button>
+						<button aria-label="Shopping Cart" class="icon-button">
+							<i class="fas fa-shopping-cart icon"></i>
+						</button>
+						<button aria-label="User Account" class="icon-button">
+							<i class="fas fa-user icon"></i>
+						</button>
+					</div>
+				</div>
 			</div>
-	
-			<a href="#" class="nav-link">About Us</a>
-	
-			<div class="nav-item group">
-			  <a href="#" class="nav-link">
-				Shop
-				<i class="fas fa-chevron-down nav-icon"></i>
-			  </a>
+		</nav>
+	</header>
+	<!-- End Header Section -->
+
+	<!-- Start Product Section -->
+	<div class="product-section">
+		<div class="container">
+			<div class="row">
+				<!-- Start Column 1 -->
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+					<h2 class="mb-4 section-title">Crafted with excellent material.</h2>
+					<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+						vulputate velit imperdiet dolor tempor tristique. </p>
+					<p><a href="shop.html" class="btn btn-shop">Explore</a></p>
+				</div>
+				<!-- End Column 1 -->
+
+				<!-- Start Column 2 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="images/product-1.png" class="img-fluid product-thumbnail" alt="Nordic Chair">
+						<h3 class="product-title">Nordic Chair</h3>
+						<strong class="product-price">$50.00</strong>
+						<span class="icon-cross">
+							<img src="images/cross.svg" class="img-fluid" alt="Close icon">
+						</span>
+					</a>
+				</div>
+				<!-- End Column 2 -->
+
+				<!-- Start Column 3 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="images/product-2.png" class="img-fluid product-thumbnail" alt="Kruzo Aero Chair">
+						<h3 class="product-title">Kruzo Aero Chair</h3>
+						<strong class="product-price">$78.00</strong>
+						<span class="icon-cross">
+							<img src="images/cross.svg" class="img-fluid" alt="Close icon">
+						</span>
+					</a>
+				</div>
+				<!-- End Column 3 -->
+
+				<!-- Start Column 4 -->
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="images/product-3.png" class="img-fluid product-thumbnail" alt="Ergonomic Chair">
+						<h3 class="product-title">Ergonomic Chair</h3>
+						<strong class="product-price">$43.00</strong>
+						<span class="icon-cross">
+							<img src="images/cross.svg" class="img-fluid" alt="Close icon">
+						</span>
+					</a>
+				</div>
+				<!-- End Column 4 -->
+
 			</div>
-	
-			<a href="#" class="nav-link">Blog</a>
-	
-			<div class="nav-item group">
-			  <a href="#" class="nav-link">
-				Pages
-				<i class="fas fa-chevron-down nav-icon"></i>
-			  </a>
-			</div>
-	
-			<a href="#" class="nav-link">Contact Us</a>
-		  </nav>
 		</div>
-	
-		<div class="header-right">
-		  <button aria-label="Search" class="icon-button">
-			<i class="fas fa-search icon"></i>
-		  </button>
-	
-		  <button aria-label="Shopping Cart" class="icon-button">
-			<i class="fas fa-shopping-cart icon"></i>
-		  </button>
-	
-		  <button aria-label="User Account" class="icon-button">
-			<i class="fas fa-user icon"></i>
-		  </button>
-		</div>
-	  </header>
-
-	  <!-- End Header Section -->
-	   
-    <!-- Start Product Section -->
-    <div class="product-section">
-        <div class="container">
-            <div class="row">
-                <!-- Start Column 1 -->
-                <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-                    <h2 class="mb-4 section-title">Crafted with excellent material.</h2>
-                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-                        vulputate velit imperdiet dolor tempor tristique. </p>
-                    <p><a href="shop.html" class="btn btn-shop">Explore</a></p>
-                </div>
-                <!-- End Column 1 -->
-
-                <!-- Start Column 2 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="images/product-1.png" class="img-fluid product-thumbnail" alt="Nordic Chair">
-                        <h3 class="product-title">Nordic Chair</h3>
-                        <strong class="product-price">$50.00</strong>
-                        <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid" alt="Close icon">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 2 -->
-
-                <!-- Start Column 3 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="images/product-2.png" class="img-fluid product-thumbnail" alt="Kruzo Aero Chair">
-                        <h3 class="product-title">Kruzo Aero Chair</h3>
-                        <strong class="product-price">$78.00</strong>
-                        <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid" alt="Close icon">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 3 -->
-
-                <!-- Start Column 4 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="images/product-3.png" class="img-fluid product-thumbnail" alt="Ergonomic Chair">
-                        <h3 class="product-title">Ergonomic Chair</h3>
-                        <strong class="product-price">$43.00</strong>
-                        <span class="icon-cross">
-                            <img src="images/cross.svg" class="img-fluid" alt="Close icon">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 4 -->
-
-            </div>
-        </div>
-    </div>
-    <!-- End Product Section -->
+	</div>
+	<!-- End Product Section -->
 
 	<!-- best choise section -->
-	  <!-- Categories Section -->
-	  <section id="categories" class="categories">
-        <h2>Best Choise For You</h2>
-        <div class="category-grid">
-            <div class="category-item">
+	<!-- Categories Section -->
+	<section id="categories" class="categories">
+		<h2>Best Choise For You</h2>
+		<div class="category-grid">
+			<div class="category-item">
 				<a href="#">
-                <img src="images/choice1.png" alt="Living Room">
-                <h4>For Living Room</h3>
+					<img src="images/choice1.png" alt="Living Room">
+					<h4>For Living Room</h3>
 				</a>
-            </div>
-            <div class="category-item">
+			</div>
+			<div class="category-item">
 				<a href="#">
-                <img src="images/choice2.png"  alt="Bedroom">
-                <h4>For Dining</h3>
+					<img src="images/choice2.png" alt="Bedroom">
+					<h4>For Dining</h3>
 				</a>
-            </div>
-            <div class="category-item">
+			</div>
+			<div class="category-item">
 				<a href="#">
-                <img src="images/choice3.png" alt="Dining">
-                <h4>For Bedroom</h3>
+					<img src="images/choice3.png" alt="Dining">
+					<h4>For Bedroom</h3>
 				</a>
-            </div>
-        </div>
-    </section>
+			</div>
+		</div>
+	</section>
 	<!-- end best choise section -->
 
-    <!-- arm chair -->
-    <div class="main">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-                    <img src="images/armchair2.png" class="img-fluid" alt="Modern Arm Chair">
-                </div>
-                <div class="col-md-6 content">
-                    <h1>Modern Arm Chair</h1>
-    
-                    <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deseru</p>
-                    <button class="btn btn-shop">Shop Now</button>
-                </div>
-            </div>
-        </div>
-      </div>
-      <!-- end arm chair -->
-
-
-      <!-- Start Footer Section -->
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/sofa.png" alt="Image" class="img-fluid">
+	<!-- arm chair -->
+	<div class="main">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 text-center">
+					<img src="images/armchair2.png" class="img-fluid" alt="Modern Arm Chair">
 				</div>
+				<div class="col-md-6 content">
+					<h1>Modern Arm Chair</h1>
 
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+					<p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deseru
+					</p>
+					<button class="btn btn-shop">Shop Now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end arm chair -->
 
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
-								</div>
-								<div class="col-auto">
-									<button type="submit" class="btn btn-primary" aria-label="Submit newsletter">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
 
-						</div>
+	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+
+			<div class="sofa-img">
+				<img src="images/sofa.png" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="subscription-form">
+						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
+									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+						<form action="#" class="row g-3">
+							<div class="col-auto">
+								<input type="text" class="form-control" placeholder="Enter your name">
+							</div>
+							<div class="col-auto">
+								<input type="email" class="form-control" placeholder="Enter your email">
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-primar" aria-label="Submit newsletter">
+									<span class="fa fa-paper-plane"></span>
+								</button>
+							</div>
+						</form>
+
 					</div>
 				</div>
+			</div>
 
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4">
+					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+						Pellentesque habitant</p>
 
-						<ul class="list-unstyled custom-social">
-							<li><a href="#" aria-label="Visit our Facebook page"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#" aria-label="Visit our Twitter page"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#" aria-label="Visit our Instagram page"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#" aria-label="Visit our LinkedIn page"><span class="fa fa-brands fa-linkedin"></span></a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-8">
-						<div class="row links-wrap">
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact us</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Knowledge base</a></li>
-									<li><a href="#">Live chat</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Our team</a></li>
-									<li><a href="#">Leadership</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Nordic Chair</a></li>
-									<li><a href="#">Kruzo Aero</a></li>
-									<li><a href="#">Ergonomic Chair</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
+					<ul class="list-unstyled custom-social">
+						<li><a href="#" aria-label="Visit our Facebook page"><span
+									class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#" aria-label="Visit our Twitter page"><span
+									class="fa fa-brands fa-twitter"></span></a></li>
+						<li><a href="#" aria-label="Visit our Instagram page"><span
+									class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#" aria-label="Visit our LinkedIn page"><span
+									class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
 				</div>
 
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
-            </p>
+				<div class="col-lg-8">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
 						</div>
 
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Knowledge base</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Our team</a></li>
+								<li><a href="#">Leadership</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 							</ul>
 						</div>
 
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Nordic Chair</a></li>
+								<li><a href="#">Kruzo Aero</a></li>
+								<li><a href="#">Ergonomic Chair</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
 			</div>
-		</footer>
-		<!-- End Footer Section -->	
 
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; 
+							<span>BeFurniture</span>
+						</p>
+					</div>
+
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled d-inline-flex ms-auto">
+							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- Live Chat Button -->
+	<div class="live-chat">
+		<button class="live-chat-button" onclick="openChat()">
+			<i class="fas fa-comment"></i>
+			Live Chat
+		</button>
+	</div>
+
+	<!-- End Live Chat Button -->
+
+	<script src="JAVASCRIPT/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
