@@ -1,0 +1,164 @@
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .cart-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cart-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cart-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cart-card h3 {
+    margin: 1rem 0;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .cart-card .price {
+    font-weight: bold;
+    color: #3b5d50;
+    font-size: 1.3rem;
+  }
+  
+  .cart-card button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Unique styles for each card */
+  .card-1 {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  }
+  .card-1 button {
+    background: #ff6b6b;
+    color: white;
+  }
+  .card-1:hover {
+    box-shadow: 0 8px 20px rgba(255,107,107,0.2);
+  }
+  
+  .card-2 {
+    background: linear-gradient(145deg, #ffffff, #e6f6fa);
+  }
+  .card-2 button {
+    background: #4ecdc4;
+    color: white;
+  }
+  .card-2:hover {
+    box-shadow: 0 8px 20px rgba(78,205,196,0.2);
+  }
+  
+  .card-3 {
+    background: linear-gradient(145deg, #ffffff, #fff4e6);
+  }
+  .card-3 button {
+    background: #ff9f43;
+    color: white;
+  }
+  .card-3:hover {
+    box-shadow: 0 8px 20px rgba(255,159,67,0.2);
+  }
+  
+  .card-4 {
+    background: linear-gradient(145deg, #ffffff, #f3e5f5);
+  }
+  .card-4 button {
+    background: #a55eea;
+    color: white;
+  }
+  .card-4:hover {
+    box-shadow: 0 8px 20px rgba(165,94,234,0.2);
+  }
+  
+  .card-5 {
+    background: linear-gradient(145deg, #ffffff, #e8f5e9);
+  }
+  .card-5 button {
+    background: #2ecc71;
+    color: white;
+  }
+  .card-5:hover {
+    box-shadow: 0 8px 20px rgba(46,204,113,0.2);
+  }
+  
+  .card-6 {
+    background: linear-gradient(145deg, #ffffff, #fce4ec);
+  }
+  .card-6 button {
+    background: #e84393;
+    color: white;
+  }
+  .card-6:hover {
+    box-shadow: 0 8px 20px rgba(232,67,147,0.2);
+  }
+  
+  .card-7 {
+    background: linear-gradient(145deg, #ffffff, #e3f2fd);
+  }
+  .card-7 button {
+    background: #2196f3;
+    color: white;
+  }
+  .card-7:hover {
+    box-shadow: 0 8px 20px rgba(33,150,243,0.2);
+  }
+  
+  .card-8 {
+    background: linear-gradient(145deg, #ffffff, #fff3e0);
+  }
+  .card-8 button {
+    background: #f39c12;
+    color: white;
+  }
+  .card-8:hover {
+    box-shadow: 0 8px 20px rgba(243,156,18,0.2);
+  }
+  
+  .card-9 {
+    background: linear-gradient(145deg, #ffffff, #e8eaf6);
+  }
+  .card-9 button {
+    background: #3f51b5;
+    color: white;
+  }
+  .card-9:hover {
+    box-shadow: 0 8px 20px rgba(63,81,181,0.2);
+  }
+  
+  /* Hover animations */
+  .cart-card button:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .cart-card {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
