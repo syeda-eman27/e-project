@@ -1,3 +1,13 @@
+AOS.init();
+
+AOS.init({
+    offset: 120,
+    delay: 200, 
+    duration: 1000, 
+    easing: 'ease', 
+    once: true, 
+});
+
 let chatContainer = null;
 let isInitialized = false;
 
@@ -155,8 +165,8 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
 });
 
 /* Cart */
