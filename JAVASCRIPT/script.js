@@ -108,8 +108,6 @@ function createSearchUI() {
 
     document.body.insertAdjacentHTML('beforeend', searchHTML);
     searchContainer = document.getElementById('searchContainer');
-
-    // Add event listener for Enter key
     document.getElementById('searchInput').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             performSearch();
@@ -143,7 +141,6 @@ function performSearch() {
     const resultsContainer = document.getElementById('searchResults');
 
     if (searchTerm) {
-        // Example search results - you can modify this to match your actual products
         const results = [
             { name: 'Nordic Chair', price: '$50.00' },
             { name: 'Kruzo Aero Chair', price: '$78.00' },
@@ -160,44 +157,3 @@ function performSearch() {
             : '<p style="text-align: center; padding: 20px;">No results found</p>';
     }
 }
-
-const hamburger = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-});
-
-/* Cart */
-document.querySelectorAll('.cart-card').forEach(card => {
-    const minusBtn = card.querySelector('.minus');
-    const plusBtn = card.querySelector('.plus');
-    const qtyInput = card.querySelector('.qty-input');
-    const addToCartBtn = card.querySelector('.add-to-cart');
-
-    minusBtn.addEventListener('click', () => {
-        let value = parseInt(qtyInput.value);
-        if (value > 1) {
-            qtyInput.value = value - 1;
-        }
-    });
-
-    plusBtn.addEventListener('click', () => {
-        let value = parseInt(qtyInput.value);
-        qtyInput.value = value + 1;
-    });
-
-    qtyInput.addEventListener('change', () => {
-        if (qtyInput.value < 1 || !qtyInput.value) {
-            qtyInput.value = 1;
-        }
-    });
-
-    addToCartBtn.addEventListener('click', () => {
-        const productName = card.querySelector('h3').textContent;
-        const quantity = qtyInput.value;
-        alert(`Added ${quantity} ${productName}(s) to cart!`);
-        // Here you can add your cart functionality
-    });
-});
