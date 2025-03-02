@@ -73,22 +73,9 @@
 	</header>
 	<!-- End Header Section -->
 
-    <!-- Start Bet Room Section -->
-    <section class="bet-room-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="bet-room-content">
-                        <h2 class="bet-room-title">Bet Room</h2>
-                        <p class="bet-room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Bet Room Section -->
-    
-     
+
+
+
 
     	<!-- Start Footer Section -->
 	<footer class="footer-section">
@@ -213,9 +200,24 @@
 	</div>
 
 	<!-- End Live Chat Button -->
-
-	<script src="JAVASCRIPT/script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="JAVASCRIPT/script.js"></script>
+	<!-- AOS Animation -->
+	<script>
+		AOS.init({
+			offset: 100,
+			delay: 0,
+			duration: 800,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false,
+			anchorPlacement: 'top-bottom',
+			disable: 'mobile'
+		});
+	</script>
+
 </body>
+
 </html>
