@@ -315,3 +315,81 @@ a{
         font-size: 30px;
     }
 }
+.card-custom {
+    width: 100%;
+    max-width: 240px;
+    height: 300px;
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+    border: none;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    height: 150px;
+    background-color: #f8f9fa;
+    transition: 0.3s ease;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+    padding: 1.3rem;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: #000;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 2px solid #dee2e6;
+    margin-top: 55px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 800; 
+  color : #3b5d50;
+}
+
+.cart-btn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: #dce5e4;
+    color: #3b5d50;
+    border-radius: 50%;
+    border : none !important;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #3b5d50;
+  color: #ffffff;
+}
+
+.card-img-top:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card-custom:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    background-color: #e3e4e4;   
+}

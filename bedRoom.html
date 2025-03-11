@@ -82,7 +82,7 @@
 		<!-- list item -->
 		<div class="list">
 			<div class="item">
-				<img src="images/bed.png">
+				<img src="images/bed.png" alt="Bedroom Image">
 				<div class="content">
 					<div class="author">INTERIOR STUDIO</div>
 					<div class="title">LUXURY BEDROOM</div>
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/blueee-photo.jpg">
+				<img src="images/blueee-photo.jpg" alt="Blue Bedroom Image">
 				<div class="content">
 					<div class="author">INTERIOR STUDIO</div>
 					<div class="title">LUXURY BEDROOM</div>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/Traditional.png">
+				<img src="images/Traditional.png" alt="Traditional Bedroom Image">
 				<div class="content">
 					<div class="author">INTERIOR STUDIO</div>
 					<div class="title">LUXURY BEDROOM</div>
@@ -130,7 +130,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/bedroom-interior-design-style.jpg">
+				<img src="images/bedroom-interior-design-style.jpg" alt="Bedroom Interior Design Style">
 				<div class="content">
 					<div class="author">INTERIOR STUDIO</div>
 					<div class="title">LUXURY BEDROOM</div>
@@ -150,28 +150,28 @@
 		<!-- list thumbnail -->
 		<div class="thumbnail">
 			<div class="item">
-				<img src="images/bed.png">
+				<img src="images/bed.png" alt="bed">
 				<div class="content">
 					<div class="title">Modern Design</div>
 					<div class="description">Contemporary Style</div>
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/blueee-photo.jpg">
+				<img src="images/blueee-photo.jpg" alt="blue-bed">
 				<div class="content">
 					<div class="title">Blue Theme</div>
 					<div class="description">Calming Aesthetics</div>
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/Traditional.png">
+				<img src="images/Traditional.png" alt="traditional-bed">
 				<div class="content">
 					<div class="title">Classic Style</div>
 					<div class="description">Timeless Elegance</div>
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/bedroom-interior-design-style.jpg">
+				<img src="images/bedroom-interior-design-style.jpg" alt="interio-bed">
 				<div class="content">
 					<div class="title">Bohemian</div>
 					<div class="description">Eclectic Decor</div>
@@ -181,10 +181,10 @@
 
 		<!-- navigation -->
 		<div class="arrows">
-			<button id="prev">
+			<button id="prev" aria-label="Previous">
 				<i class="fa fa-angle-left"></i>
 			</button>
-			<button id="next">
+			<button id="next" aria-label="Next">
 				<i class="fa fa-angle-right"></i>
 			</button>
 		</div>
@@ -196,61 +196,357 @@
 	<!-- bedroom card section start-->
 
 	<section>
-		<div class="container">
+		<div class="container py-5">
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<img src="images/bed.png" alt="Image" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">Modern Design</h5>
-							<p class="card-text">Contemporary Style</p>
-							<a href="#" class="btn btn-primar">View Details</a>
+				<!-- Card 1 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed3.png" alt="interio-bed " class="img-fluid"> 
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<img src="images/blueee-photo.jpg" alt="Image" class="card-img-top">
 						<div class="card-body">
-							<h5 class="card-title">Blue Theme</h5>
-							<p class="card-text">Calming Aesthetics</p>
-							<a href="#" class="btn btn-primar">View Details</a>
+							<h5 class="card-title">Product Title 1</h5>
+							<p class="card-text">Product description and details for item 1</p>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<img src="images/Traditional.png" alt="Image" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">Classic Style</h5>
-							<p class="card-text">Timeless Elegance</p>
-							<a href="#" class="btn btn-primar">View Details</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<img src="images/bedroom-interior-design-style.jpg" alt="Image" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">Bohemian</h5>
-							<p class="card-text">Eclectic Decor</p>
-							<a href="#" class="btn btn-primar">View Details</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<img src="images/bed.png" alt="Image" class="card-img-top">
-						<div class="card-body">
-							<h5 class="card-title">Modern Design</h5>
-							<p class="card-text">Contemporary Style</p>
-							<a href="#" class="btn btn-primar">View Details</a>
+						<div class="card-footer">
+							<span class="price">$299.99</span>
+							<button class="cart-btn" data-toggle="modal" data-target="#cartModal" data-id="1"
+								title="Add to Cart">
+								<i class="fas fa-shopping-cart"></i>
+							</button>
 						</div>
 					</div>
 				</div>
 
+				<!-- Repeat similar cards 2-8 -->
+				<!-- Card 2 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed2.jpg" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed11.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bedroom-interior-design-style.jpg" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed5.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed6.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed7.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed8.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed11.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bet1.jpg" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed1.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed8.png" alt="Image" class="img-fluid h-100 w-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed9.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed10.png" alt="Image"  class="img-fluid h-100 w-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed15.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed3.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed5.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed12.png" alt="Image" class="img-fluid w-100 h-100">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="card card-custom shadow-sm">
+						<div class="card-img-top">
+							<img src="images/bed13.png" alt="Image" class="img-fluid">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Title 2</h5>
+							<p class="card-text">Product description and details for item 2</p>
+						</div>
+						<div class="card-footer">
+							<span class="price">$399.99</span>-
+							<button class="cart-btn" aria-label="Add to Cart">
+								 <i class="fas fa-shopping-cart"></i>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<hr>
 
 	</section>
 	<!-- bedroom card section end -->
