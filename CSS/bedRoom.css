@@ -42,8 +42,8 @@ a{
 .carousel .list .item .content{
     position: absolute;
     top: 20%;
-    width: 1140px;
-    max-width: 80%;
+    min-width: 1140px;
+    /* max-width: 80%; */
     left: 45%;
     transform: translateX(-50%);
     padding-right: 30%;
@@ -68,6 +68,13 @@ a{
 .carousel .list .item .topic{
     color: #f1683a;
 }
+.carousel .list .item .sale{
+    font-size: 2.9em;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 0 5px 10px #fff;
+}
+
 .des{
     font: 1em sans-serif;
 }
@@ -131,9 +138,54 @@ a{
     font-weight: 300;
 }
 /* arrows */
+.arrows button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #fff;
+}
+
+.arrows button:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.arrows button:active {
+    transform: scale(0.85);
+}
+
+.arrows button i {
+    transition: transform 0.3s ease;
+}
+
+.arrows button:hover i {
+    transform: scale(1.2);
+}
+
+/* Disabled state */
+.arrows button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+/* Mobile tap animation */
+@media (max-width: 768px) {
+    .arrows button:active {
+        transform: scale(0.8);
+    }
+}
 .arrows{
     position: absolute;
-    top: 83%;
+    top: 88%;
     right: 52%;
     z-index: 100;
     width: 300px;
@@ -141,21 +193,6 @@ a{
     display: flex;
     gap: 10px;
     align-items: center;
-}
-.arrows button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eee4;
-    border: none;
-    color: #fff;
-    font-family: monospace;
-    font-weight: bold;
-    transition: .5s;
-}
-.arrows button:hover{
-    background-color: #fff;
-    color: #000;
 }
 
 /* animation */
@@ -168,6 +205,7 @@ a{
 .carousel .list .item:nth-child(1) .content .author,
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .sale,
 .carousel .list .item:nth-child(1) .content .des,
 .carousel .list .item:nth-child(1) .content .buttons
 {
@@ -189,12 +227,17 @@ a{
 .carousel .list .item:nth-child(1) .content .topic{
     animation-delay: 1.4s!important;
 }
+
+.carousel .list .item:nth-child(1) .content .sale{
+    animation-delay: 1.6s!important;
+}
 .carousel .list .item:nth-child(1) .content .des{
     animation-delay: 1.6s!important;
 }
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
 }
+
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
     width: 150px;
@@ -318,7 +361,7 @@ a{
 .card-custom {
     width: 100%;
     max-width: 240px;
-    height: 300px;
+    min-height: 100px;
     background: #f8f9fa;
     transition: transform 0.3s ease;
     border: none;
@@ -334,14 +377,15 @@ a{
 }
 
 .card-body {
-    padding: 1.3rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;;
 }
 
 .card-title {
     font-weight: 700;
     font-size: 1.3rem;
-    margin-bottom: 0.3rem;
-    color: #000;
+    margin: 0, 0.5rem;
+    color: #112718;
 }
 
 .card-text {
@@ -353,7 +397,6 @@ a{
 .card-footer {
     background: transparent;
     border-top: 2px solid #dee2e6;
-    margin-top: 55px;
     padding: 0.75rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -391,5 +434,5 @@ a{
 .card-custom:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
-    background-color: #e3e4e4;   
+    background: #3b5d5017; 
 }

@@ -1,14 +1,3 @@
-AOS.init({
-    offset: 100,
-    delay: 0,
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
-    disable: 'mobile'
-});
-
 let chatContainer = null;
 let isInitialized = false;
 
@@ -209,3 +198,6 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+
+// home page 
