@@ -14,6 +14,135 @@
 	<link href="style.css" rel="stylesheet">
 	<title>Furni design</title>
 </head>
+<style>
+	.cont{
+		  background-color:rgb(208, 213, 211);
+		  width: 100%;
+		}
+		.topic{
+			width: 100%;
+			height: 510px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #9da8b1;
+			text-align: center;
+			border:8px;
+			flex-direction: row;
+			margin: 0;
+		}
+		.img-top{
+			width: 100%;
+			height: 510px;
+			border-radius: 7px;
+		}
+		.center{
+			font-style: italic;
+			font-weight: 600;
+			color: #dee2e6;
+		}
+	   .text{
+		   font-style: oblique;
+		   opacity:0.8;
+		   color:rgb(0, 0, 0);
+		   font-weight: 600;
+	   }
+	   .sign{
+		  color: #06412a;
+		  cursor: pointer;
+	   }
+	   .design{
+		margin: 0px 30px;
+	   }
+	   .brands{
+		font-style:oblique;
+		font-weight: 600;
+		text-align: center;
+		font-size: 40px;
+		color: rgb(48, 71, 7);
+	   }
+	   .famous{
+		text-align: center;
+		color:#6c757d;
+		margin-bottom: 25px;
+	   }
+	.cards{
+			background-color: #3b5d50;
+			color: azure;
+			font-style: italic;
+			font-weight: 800;
+			text-align: center;
+		}
+	 .card-body{
+			background: #f8f9fa;
+			border-radius: 12px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+			text-align: center;
+			margin-bottom: 30px;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+			height: 150px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			overflow: hidden;
+			max-width: 500px;
+			padding: 1rem;
+			font-family: 'Poppins', sans-serif;
+		}
+	.card-title {
+			font-weight: 700;
+			font-size: 1.3rem;
+			margin: 0, 0.5rem;
+			color: #112718;
+		}
+	.card-text {
+			font-size: 0.8rem;
+			color: #6c757d;
+			margin-bottom: 1rem;
+		}
+	.card :hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+		}
+		
+	.card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 7px;
+			margin-bottom: 1rem;
+		}
+
+	.card-footer {
+			background: transparent;
+			border-top: 2px solid #dee2e6;
+			padding: 0.75rem 1rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	   }
+   .price {
+		   font-weight: 800; 
+		   color : #3b5d50;
+	  }
+	.card-btn{
+		   width: 40px;
+		   height: 40px;
+		   text-align: center;
+		   line-height: 40px;
+		   display: inline-block;
+		   background: #dce5e4;
+		   color: #3b5d50;
+		   border-radius: 50%;
+		   border : none !important;
+		  transition: all 0.3s ease;
+		}
+	.card-btn:hover {
+		  background: #3b5d50;
+		  color: #ffffff;
+		}
+  </style>
 
 <body>
 	<!-- Start Header Section -->
@@ -72,10 +201,226 @@
 		</nav>
 	</header>
 	<!-- End Header Section -->
-
-
-
-
+	
+		<!-- End Header Section -->
+		 <!--cards section-->
+		  <div class="cards">
+			 <h1>BRILLIANT IDEAS OF DINING AREA</h1>
+			 <p>A compendium for luxury living</p>
+		  </div>
+		  <div class="topic">
+			<img src="images/luxuryimg.png" class="img-top" alt="" style="width: 100%;">
+			<div>
+				<h2 class="center">VARIOUS TYPES OF GORGEOUS DINING ROOM STYLES</h2>
+				<p class="text">Each of these stylish dining room designs prove that dining in can be a treat too.This exclusive interview closely examines one of the world's foremost design styles.As we celebrate this remarkable array of newcomers and distinguished alumni alike, let their industry-defining portfolios transport you to a world of design inspiration.this year's honourees embody outstanding creativity, shaping the world of interiors and leaving an indelible mark on our industry. Their lasting impact, innovative thinking, and inimitable style have earned them a place on this prestigious list and set the tone for an exciting year ahead.As we celebrate this remarkable array of newcomers and distinguished alumni alike, let their industry-defining portfolios transport you to a world of design inspiration.</p>
+					<div class="sign">BY Esha Noor ,Interiors Director</div>
+			</div>
+		  </div>
+		  <div class="design">
+			 <h3 class="brands">SOME WELL-KNOWN BRANDS</h3>
+			 <p class="famous">From renowned heritage furniture brands to game-changing new additions, thesee world's most brands., advice, projects and products of the world's most famous interior designers.</p>
+		  </div>
+		  <div class="container cont">
+			  <div class="row row-cols-1 row-cols-md-2 g-4 ">
+				  <div class="card" style="width:18rem ;">
+					<img src="images/diningroomimg.png" class="card-img-top" alt="..."  style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Stylish Glamour</h5>
+					  <p class="card-text"> Comfortable chairs are a must and are usually upholstered tactile fabrics in smart tones; tables are subtle statement-makers; and lighting is well-chosen and reminiscent of a deluxe eatery.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:18rem;">
+					<img src="images/img2.png" class="card-img-top" alt="..."  style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Classic Sophistication</h5>
+					  <p class="card-text">Classic by name, classic by nature—this is the exemplar for all luxury dining rooms and a great choice for a host or hostess with the most. It’s the quintessentially pristine dining room.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:20rem;">
+					<img src="images/img3.png" class="card-img-top" alt="..." style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Refined Opulence</h5>
+					  <p class="card-text">Guests expect a show of a meal with this style of dining room as its backdrop. Here, it’s all about creating a lavish display and pairing it with an equally impressive dinner. Don’t be scared of oversized proportions, but keep upholstery simple to maintain a sophisticated aesthetic.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:20rem;">
+					  <img src="images/img4.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Smart Casual Dining Room</h5>
+						<p class="card-text">Proving that a relaxed look can be just as luxurious, this style is characterised by an inherent informality but always with a refined element  A self-contained dining set up is a lovely addition to a kitchen.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img5.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Country Charm</h5>
+						<p class="card-text">A popular dining room style choice, the country look is nothing if not familiar and welcoming which is what so many people want for their home, no less their dining room. An airy open plan conversion makes a great site for this kind of style</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img6.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Neoclassical Elegance</h5>
+						<p class="card-text">Dignified and classy, a traditional dining room like this one is ideal for those antique lovers or those who enjoy mixing antiques in with modern furniture</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img7.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Modern Chinoiserie</h5>
+						<p class="card-text">Add an unexpected element to your space with a modern-day take on the ever-loved interior design style which was favoured heavily in the 18th century</p>
+					  </div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img8.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining room with Traditional Grandeur</h5>
+						<p class="card-text">This kind of dining room is the setting you’d imagine a special family dinner to happen in, including the annual Christmas dinner. Well-suited to and usually found in homes with generous proportions.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img9.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Contemporary Cool Dining Room</h5>
+						<p class="card-text">This is a no fuss, no muss kind of dining experience which allows the focus to remain on the meal (which should be appropriately conceptual). Silhouettes are discreet but always considered.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img10.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Rustic Luxury Dining Room</h5>
+						<p class="card-text">You can’t help but be drawn to the warmth of the rich materials and natural elements of this style. Carpentry is at its finest here with joints and hardware on show for a desirably artisanal touch.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img11.png" class="card-img-top" alt="..." style="width:100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Scandinavian style</h5>
+						<p class="card-text"> The Italy that emerged in the 60s was sexy, striking and bold. Scandinavian design took a different, humbler route, allied to functionalism rather than form."</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					 <div class="card" style="width:20rem;">
+					  <img src="images/img12.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Mid-century Modern Design-Dining</h5>
+						<p class="card-text">Woods such as rosewood, teak and walnut were used regularly and canary and mustard yellow, carnation and flamingo pink, chartreuse, pale turquoise and avocado are a quintessential Mid-century colourways.</p>
+					  </div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img13.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Minimalist Luxury Dining</h5>
+						<p class="card-text">A twentieth century interior design style known for simple forms, clean lines and uncomplicated finishes, minimalism considers the importance of negative space as much as positive space.
+						</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img14.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Interior Traditional Style</h5>
+						<p class="card-text">Traditional interior style is best represented by quintessential English furniture design and, in particular, the country’s impressive manufacturing history.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img15.png" class="card-img-top" alt="..." style="width:100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Industrial Unique Dining</h5>
+						<p class="card-text">The industrial interior design style is a popular look for lofts and warehouses thanks to its stylishly undone aesthetic.Open-plan is the main configuration and high ceilings define some of the most eye-catching spaces.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+	  
+			</div>
+		</div>
 
     	<!-- Start Footer Section -->
 	<footer class="footer-section">
