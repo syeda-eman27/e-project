@@ -1305,3 +1305,23 @@ about-us */
   background: #628576;;
   transform: scale(1.1);
 }
+.email-link {
+  color: #3b5d50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  color: #2a4137;
+  text-decoration: underline;
+}
+.contact-info-card a[href^="http"] {
+  color: #3b5d50;
+  text-decoration: none;
+  position: relative;
+}
+
+.contact-info-card a[href^="http"]:hover {
+  color: #2a4137;
+  text-decoration: underline;
+}
