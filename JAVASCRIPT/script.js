@@ -69,9 +69,32 @@ function sendMessage() {
     };
 };
 
-/* Search icon */
+// /* Search icon */
 let searchContainer = null;
 let isSearchInitialized = false;
+let allProducts = [];
+
+function initializeProducts() {
+    allProducts = [
+        // index.html سے
+        { name: 'Nordic Chair', price: '$50.00', category: 'Chairs', page: 'index.html' },
+        { name: 'Kruzo Aero Chair', price: '$78.00', category: 'Chairs', page: 'index.html' },
+        { name: 'Ergonomic Chair', price: '$43.00', category: 'Chairs', page: 'index.html' },
+
+        // livingRoom.html سے
+        { name: 'Ach Sofa Design', price: '$48,000.00', category: 'Living Room', page: 'livingRoom.html' },
+        { name: 'Aga Corner Sofa', price: '$225,000.00', category: 'Living Room', page: 'livingRoom.html' },
+
+        // Dining.html سے
+        { name: 'Dining Room with Stylish Glamour', price: '$3,999.00', category: 'Dining', page: 'Dining.html' },
+        { name: 'Dining Room with Classic Sophistication', price: '$3,999.00', category: 'Dining', page: 'Dining.html' },
+
+        // bedRoom.html سے
+        { name: 'Royal Comfort King', price: '$1,599.00', category: 'Bedroom', page: 'bedRoom.html' },
+        { name: 'Contemporary Platform', price: '$2,199.00', category: 'Bedroom', page: 'bedRoom.html' }
+        
+    ];
+}// 
 
 function createSearchUI() {
     const searchHTML = `
@@ -85,8 +108,8 @@ function createSearchUI() {
                     <input type="text" 
                            class="search-input" 
                            id="searchInput" 
-                           required=""
-                             placeholder="Search for products...">
+                           required
+                           placeholder="Search for products...">
                     <button class="search-button" onclick="performSearch()">
                         <i class="fas fa-search"></i>
                     </button>
@@ -98,56 +121,105 @@ function createSearchUI() {
 
     document.body.insertAdjacentHTML('beforeend', searchHTML);
     searchContainer = document.getElementById('searchContainer');
-    document.getElementById('searchInput').addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', performSearch);
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') performSearch();
     });
-
-    // Close search when clicking outside
-    searchContainer.addEventListener('click', function (e) {
-        if (e.target === searchContainer) {
-            closeSearch();
-        }
+    searchContainer.addEventListener('click', (e) => {
+        if (e.target === searchContainer) closeSearch();
     });
 }
-
 function openSearch() {
     if (!isSearchInitialized) {
+        initializeProducts();
         createSearchUI();
         isSearchInitialized = true;
     }
     searchContainer.style.display = 'flex';
     document.getElementById('searchInput').focus();
 }
-
 function closeSearch() {
     searchContainer.style.display = 'none';
+    document.getElementById('searchInput').value = '';
+    document.getElementById('searchResults').innerHTML = '';
 }
 
 function performSearch() {
-    const input = document.getElementById('searchInput');
-    const searchTerm = input.value.trim().toLowerCase();
+    const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
     const resultsContainer = document.getElementById('searchResults');
-
-    if (searchTerm) {
-        const results = [
-            { name: 'Nordic Chair', price: '$50.00' },
-            { name: 'Kruzo Aero Chair', price: '$78.00' },
-            { name: 'Ergonomic Chair', price: '$43.00' }
-        ].filter(item => item.name.toLowerCase().includes(searchTerm));
-
-        resultsContainer.innerHTML = results.length > 0
-            ? results.map(item => `
-                <div class="search-result-item">
-                    <h4>${item.name}</h4>
-                    <p>${item.price}</p>
-                </div>
-            `).join('')
-            : '<p style="text-align: center; padding: 20px;">No results found</p>';
+    if (!searchTerm) {
+        resultsContainer.innerHTML = '';
+        return;
     }
+    const filteredProducts = allProducts.filter(product => 
+        product.name.toLowerCase().includes(searchTerm) ||
+        product.category.toLowerCase().includes(searchTerm)
+    );
+    displayResults(filteredProducts);
 }
 
+function displayResults(products) {
+    const resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = products.length === 0 
+        ? '<p class="no-results">No products found</p>'
+        : products.map(product => `
+            <div class="search-result-item" onclick="navigateToPage('${product.page}')">
+                <h4>${product.name}</h4>
+                <p>${product.price} • ${product.category}</p>
+            </div>
+        `).join('');
+}
+
+function navigateToPage(pageUrl) {
+    window.location.href = pageUrl;
+    closeSearch();
+}
+
+// add-to-cart
+document.addEventListener('DOMContentLoaded', function() {
+    // Quantity controls functionality
+    document.querySelectorAll('.cart-card').forEach(card => {
+        const minusBtn = card.querySelector('.minus');
+        const plusBtn = card.querySelector('.plus');
+        const qtyInput = card.querySelector('.qty-input');
+        
+        minusBtn.addEventListener('click', () => {
+            let currentVal = parseInt(qtyInput.value);
+            if(currentVal > 1) {
+                qtyInput.value = currentVal - 1;
+            }
+        });
+
+        plusBtn.addEventListener('click', () => {
+            let currentVal = parseInt(qtyInput.value);
+            qtyInput.value = currentVal + 1;
+        });
+
+        // Input validation
+        qtyInput.addEventListener('change', () => {
+            if(qtyInput.value < 1 || isNaN(qtyInput.value)) {
+                qtyInput.value = 1;
+            }
+        });
+    });
+
+    // Add to cart functionality
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.cart-card');
+            const product = {
+                name: card.querySelector('h3').innerText,
+                price: card.querySelector('.price').innerText,
+                quantity: parseInt(card.querySelector('.qty-input').value)
+            };
+            
+            // Add your cart logic here
+            console.log('Added to cart:', product);
+            alert(`Added ${product.quantity} ${product.name}(s) to cart!`);
+        });
+    });
+});
 
 // BedRoom Carousel
 let nextDom = document.getElementById('next');
@@ -199,27 +271,3 @@ function showSlider(type){
     }, timeAutoNext)
 }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    var tinyslider = function() {
-        var el = document.querySelectorAll('.testimonial-slider');
-
-        if (el.length > 0) {
-            var slider = tns({
-                container: '.testimonial-slider',
-                items: 1,
-                axis: "horizontal",
-                controlsContainer: "#testimonial-nav",
-                swipeAngle: false,
-                speed: 700,
-                nav: true,
-                controls: true,
-                autoplay: true,
-                autoplayHoverPause: true,
-                autoplayTimeout: 3500,
-                autoplayButtonOutput: false
-            });
-        }
-    };
-    tinyslider();
-});

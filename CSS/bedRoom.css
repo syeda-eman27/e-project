@@ -360,8 +360,8 @@ a{
 }
 .card-custom {
     width: 100%;
-    max-width: 240px;
-    min-height: 100px;
+    max-width: 250px;
+    min-height: 120px;
     background: #f8f9fa;
     transition: transform 0.3s ease;
     border: none;
@@ -383,8 +383,8 @@ a{
 
 .card-title {
     font-weight: 700;
-    font-size: 1.3rem;
-    margin: 0, 0.5rem;
+    font-size: 1.2rem;
+    margin: 0px, 0.5rem;
     color: #112718;
 }
 

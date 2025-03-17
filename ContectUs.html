@@ -11,7 +11,7 @@
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="CSS/style.css">
-	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Furni design</title>
 </head>
 
@@ -73,36 +73,99 @@
 	</header>
 	<!-- End Header Section -->
 
-	<body>
-		<section id="contact" class="py-5 bg-gradient zoom-in">
-		   <div class="container">
-			   <h2 class="text-center about2">Contact Us</h2>
-			   <div class="row">
-			   <form class=" rounded shadow bg-white col-md-6" data-aos="fade-left"
-			   data-aos-offset="300" data-aos-duration="1000"
-			   data-aos-easing="ease-in-sine">
-				   <div class="mb-3">
-					   <label for="name" class="form-label text-primary">Name</label>
-					   <input type="text" class="form-control border-primary shadow-sm" id="name" placeholder="Enter your name">
-				   </div>
-				   <div class="mb-3">
-					   <label for="email" class="form-label text-primary">Email</label>
-					   <input type="email" class="form-control border-primary shadow-sm" id="email" placeholder="Enter your email">
-				   </div>
-				   <div class="mb-3">
-					   <label for="message" class="form-label text-primary">Message</label>
-					   <textarea class="form-control border-primary shadow-sm" id="message" rows="4" placeholder="Your message"></textarea>
-				   </div>
-				   <button type="submit" class="btn btn-shop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
-			   </form>
-			   <di   v class="col-md-6" data-aos="fade-right"
-			   data-aos-offset="300" data-aos-duration="1000">
-			   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12900.327153596201!2d67.0018242847963!3d24.862755449951987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1735738742351!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				   <!-- <img src="img/map.jpg" class="img-fluid" alt="About Bridges" width="100%"> -->
-			   </di>
-		   </div>
-	   </div>
-	  </section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="lead">We'd love to hear from you! Reach out for inquiries or feedback.</p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- Contact Info Cards -->
+            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="contact-info-card shadow">
+                    <div class="icon-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Visit Us</h4>
+                    <p>123 Furniture Street<br>Design District, Karachi 75500</p>
+                </div>
+
+                <div class="contact-info-card shadow mt-4" data-aos="fade-right" data-aos-delay="150">
+                    <div class="icon-box">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>+92 123 456789<br>Mon-Fri: 9am - 6pm</p>
+                </div>
+
+                <div class="contact-info-card shadow mt-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="icon-box">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p>info@befurniture.com<br>support@befurniture.com</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="250">
+                <div class="contact-form-wrapper shadow-lg">
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="col-12 pt-5">
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+		<div class="row mt-4" data-aos="fade-up">
+			<div class="col-12">
+				<div class="social-links-contact">
+					<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+
+        <!-- Map Section -->
+        <div class="row mt-5" data-aos="zoom-in">
+            <div class="col-12">
+                <div class="map-container shadow-lg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.215312364272!2d67.00181571500636!3d24.86275549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d9dda02e5ad%3A0xdf6f4e9717a72616!2sFurniture%20Market!5e0!3m2!1sen!2s!4v1621234567890!5m2!1sen!2s" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
 
     	<!-- Start Footer Section -->
 	<footer class="footer-section">
