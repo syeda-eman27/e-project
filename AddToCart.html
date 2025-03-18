@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/b.png">
-    <title>ADD-TO-CART</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/b.png">
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Furni design</title>
 </head>
-<body>
+
   <style>
     .cart-container {
     display: grid;
@@ -196,6 +203,67 @@
     }
 }
   </style>
+  <body>
+  <!-- Start Header Section -->
+	<header class="header" data-aos="fade-down" data-aos-duration="800">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<div class="logo navbar-brand">
+					<h1 class="logo-text">
+						<span class="logo-text-amber">BE</span>
+						<span class="logo-text-gray">FURNITURE</span>
+					</h1>
+					<p class="logo-subtext">Furniture For Everyone</p>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav m-auto  ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-link-amber" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="About-us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="Blog.html">Blog</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button"
+								data-toggle="dropdown" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="signup.html">My Account</a></li>
+								<li><a class="dropdown-item" href="offer.html">For Sales</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="services.html">Services..</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="ContectUs.html">Contact Us</a>
+						</li>
+					</ul>
+					<div class="header-right ms-auto">
+						<button aria-label="Search" class="icon-button" onclick="openSearch()">
+							<i class="fas fa-search icon"></i>
+						</button>
+						<a href="AddToCart.html">
+							<button aria-label="Shopping Cart" class="icon-button">
+								<i class="fas fa-shopping-cart icon"></i>
+							</button>
+						</a>
+						<button aria-label="User Account" class="icon-button">
+							<i class="fas fa-user icon"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Section -->
 
 <div class="cart-container">
   <div class="cart-card card-1">
@@ -212,6 +280,130 @@
         <button class="add-to-cart">Add to Cart</button>
     </div>
   </div>
+</div>
+<!-- Start Footer Section -->
+<footer class="footer-section">
+    <div class="container relative">
+
+        <div class="sofa-img" data-aos="fade-up">
+            <img src="images/sofa.png" alt="Image" class="img-fluid">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="subscription-form" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
+                                alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+                    <form action="#" class="row g-3">
+                        <div class="col-auto">
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="col-auto">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primar" aria-label="Submit newsletter">
+                                <span class="fa fa-paper-plane"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 mb-5">
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="mb-4 footer-logo-wrap"><a href="#"
+                        class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+                <p class="mb-4">Facilisis made easy as pure rutrum lobortis. Live without fear, just like a
+                    smooth-flowing stream. The essence of existence lies in adaptability. Every challenge is an
+                    opportunity to grow. Embrace the journey.</p>
+
+                <ul class="list-unstyled custom-social">
+                    <li><a href="#" aria-label="Visit our Facebook page"><span
+                                class="fa fa-brands fa-facebook-f"></span></a></li>
+                    <li><a href="#" aria-label="Visit our Twitter page"><span
+                                class="fa fa-brands fa-twitter"></span></a></li>
+                    <li><a href="#" aria-label="Visit our Instagram page"><span
+                                class="fa fa-brands fa-instagram"></span></a></li>
+                    <li><a href="#" aria-label="Visit our LinkedIn page"><span
+                                class="fa fa-brands fa-linkedin"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="row links-wrap">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Knowledge base</a></li>
+                            <li><a href="#">Live chat</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Our team</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Nordic Chair</a></li>
+                            <li><a href="#">Kruzo Aero</a></li>
+                            <li><a href="#">Ergonomic Chair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-top copyright">
+            <div class="row pt-4">
+                <div class="col-lg-6">
+                    <p class="mb-2 text-center text-lg-start">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <span>BeFurniture</span>
+                    </p>
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-end">
+                    <ul class="list-unstyled d-inline-flex ms-auto">
+                        <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- End Footer Section -->
+
+<!-- Live Chat Button -->
+<div class="live-chat">
+    <button class="live-chat-button" onclick="openChat()">
+        <i class="fas fa-comment"></i>
+        Live Chat
+    </button>
+</div>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="JAVASCRIPT/script.js"></script>
 </body>

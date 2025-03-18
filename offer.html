@@ -9,73 +9,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Serif&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<title>BeFurniture Blog</title>
+	<title>Furni offers</title>
 </head>
- <!-- Custom CSS -->
- <style>
-	.blog-hero {
-		background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-					url('images/banner2.jpg') center/cover;
-		height: 60vh;
-		display: flex;
-		align-items: center;
-	}
-	
-	.blog-card {
-		border: none;
-		transition: transform 0.3s;
-		overflow: hidden;
-		border-radius: 15px;
-	}
-	
-	.blog-card:hover {
-		transform: translateY(-10px);
-	}
-	
-	.blog-card img {
-		height: 250px;
-		object-fit: cover;
-		transition: transform 0.3s;
-	}
-	
-	.blog-card:hover img {
-		transform: scale(1.05);
-	}
-	
-	.blog-category {
-		position: absolute;
-		top: 15px;
-		right: 15px;
-		background: #3b5d50;
-		color: white;
-		padding: 5px 15px;
-		border-radius: 20px;
-		font-size: 0.9rem;
-	}
-	
-	.blog-meta {
-		color: #6c757d;
-		font-size: 0.9rem;
-	}
-	
-	.newsletter-section {
-		background: #f8f9fa;
-		border-radius: 15px;
-		padding: 3rem;
-	}
-	
-    .newsletter-section input[type="email"] {
-		width: 100%;
-		height: 50px;
-		border: none;	
-		padding: 10px 20px;
-		margin-bottom: 20px;
-		border-radius: 10px;
-		}
-</style>
 
 <body>
 	<!-- Start Header Section -->
@@ -138,53 +77,100 @@
 		</nav>
 	</header>
 	<!-- End Header Section -->
-
-	<!-- Blog Hero Section -->
-<section class="blog-hero text-white" data-aos="fade-up">
-    <div class="container text-center">
-        <h1 class="display-4 mb-3">Furniture Insights & Ideas</h1>
-        <p class="lead">Discover the latest trends and design inspiration</p>
-    </div>
-</section>
-
-<!-- Featured Posts -->
-<section class="py-5">
+	 <!-- Add this section below the header where you want the offers to appear -->
+<section class="offer-section py-5">
     <div class="container">
-        <div class="row g-4">
-            <!-- Featured Post 1 -->
-            <div class="col-lg-6" data-aos="zoom-in">
-                <div class="blog-card shadow">
-                    <div class="position-relative">
-                        <img src="images/Modern-black-king-size-bed-1024x585.jpg" class="card-img-top" alt="Modern Furniture Trends">
-                        <span class="blog-category">Trends</span>
+        <!-- Sales Carousel -->
+        <div id="offerCarousel" class="carousel slide mb-5" data-ride="carousel" data-aos="fade-up">
+            <div class="carousel-inner rounded-lg">
+                <div class="carousel-item active">
+                    <div class="carousel-content bg-danger text-white p-5 text-center">
+						<h6 class="text-white">Limited Time Offer!</h6>
+                        <h2 class="display-4">MEGA SALE!</h2>
+                        <p class="h1">UP TO <span class="display-3">70%</span> OFF</p>
+                        <p class="lead">Premium Furniture Collection</p>
+                        <button class="btn btn-dark btn-lg">SHOP NOW</button>
                     </div>
+                </div>
+                <div class="carousel-item">
+					<div class="carousel-content bg-success text-white p-5 text-center">
+                        <h2 class="display-4">FLAT</h2>
+                        <p class="h1"><span class="display-3">50%</span> OFF</p>
+                        <p class="lead">Living Room Essentials</p>
+                        <button class="btn btn-dark btn-lg">GRAB DEAL</button>
+                    </div>
+                </div>
+				<div class="carousel-item">
+					<div class="carousel-content bg-info text-white p-5 text-center">
+						<h2 class="display-4">EXCLUSIVE</h2>
+						<h2 class="display-4">NEW ARRIVALS</h2>
+						<p class="h1">UP TO <span class="display-3">30%</span>
+							OFF</p>
+							<p class="lead">Bedroom Furniture Collection</p>
+							<button class="btn btn-dark btn-lg">SHOP NOW</button>
+					</div>
+				</div>
+            </div>
+            <a class="carousel-control-prev" href="#offerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#offerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Offer Cards Grid -->
+        <h2 class="text-center mb-4" data-aos="fade-up">Hot Deals 🔥</h2>
+        <div class="row">
+            <!-- Offer Card 1 -->
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card offer-card h-100 shadow">
+                    <span class="badge-offer">50% OFF</span>
+                    <img src="images/j1.webp" class="card-img-top" alt="Offer 1">
                     <div class="card-body">
-                        <div class="blog-meta mb-2">
-                            <span class="me-3"><i class="far fa-calendar me-1"></i>March 15, 2024</span>
-                            <span><i class="far fa-clock me-1"></i>5 min read</span>
+                        <h5 class="card-title">Premium Lounge Chairs</h5>
+                        <p class="card-text">Upgrade your living space with our ergonomic designs</p>
+                        <div class="price">
+                            <span class="old-price">$599</span>
+                            <span class="new-price text-danger">$299</span>
                         </div>
-                        <h3 class="card-title">2024 Modern Furniture Trends</h3>
-                        <p class="card-text">Explore the latest innovations in contemporary furniture design...</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <button class="btn btn-shop btn-outline-dark btn-block mt-3">Add to Cart</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Featured Post 2 -->
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="blog-card shadow">
-                    <div class="position-relative">
-                        <img src="images/bed.png" class="card-img-top" alt="Interior Design">
-                        <span class="blog-category">Design</span>
-                    </div>
+            <!-- Offer Card 2 -->
+            <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+                <div class="card offer-card h-100 shadow">
+                    <span class="badge-offer">35% OFF</span>
+                    <img src="images/p17.webp" class="card-img-top" alt="Offer 2">
                     <div class="card-body">
-                        <div class="blog-meta mb-2">
-                            <span class="me-3"><i class="far fa-calendar me-1"></i>March 12, 2024</span>
-                            <span><i class="far fa-clock me-1"></i>8 min read</span>
+                        <h5 class="card-title">Luxury Sofa Sets</h5>
+                        <p class="card-text">Complete your living room with matching sets</p>
+                        <div class="price">
+                            <span class="old-price">$1299</span>
+                            <span class="new-price text-danger">$844</span>
                         </div>
-                        <h3 class="card-title">Space-Saving Solutions</h3>
-                        <p class="card-text">Maximize your living space fully confort with smart furniture choices...</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <button class="btn btn-shop btn-outline-dark btn-block mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Card 3 -->
+            <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+                <div class="card offer-card h-100 shadow">
+                    <span class="badge-offer">60% OFF</span>
+                    <img src="images/img6.png" class="card-img-top " alt="Offer 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dining Tables</h5>
+                        <p class="card-text">Modern designs for family gatherings chair back</p>
+                        <div class="price">
+                            <span class="old-price">$899</span>
+                            <span class="new-price text-danger">$359</span>
+                        </div>
+                        <button class="btn btn-shop btn-outline-dark btn-block mt-3">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -192,89 +178,74 @@
     </div>
 </section>
 
-<!-- Blog Grid -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row g-4">
-            <!-- Blog Post 1 -->
-            <div class="col-md-6 col-lg-4" 
-                 data-aos="fade-up" 
-                 data-aos-delay="50">
-                <div class="blog-card shadow">
-                    <img src="images/post-3.jpg" class="card-img-top" alt="Eco Friendly Furniture">
-                    <div class="card-body">
-                        <div class="blog-meta mb-2">
-                            <span class="me-3">April 2, 2024</span>
-                            <span>4 min read</span>
-                        </div>
-                        <h5 class="card-title">Sustainable Materials Guide</h5>
-                        <p class="card-text">How to choose eco-friendly furniture without compromising style...</p>
-                        <a href="#" class="btn btn-link text-primary">Read More →</a>
-                    </div>
-                </div>
-            </div>
+<style>
+/* Add this CSS to your style.css */
+.offer-section {
+    background: #fff8f0;
+}
 
-            <!-- Blog Post 2 -->
-            <div class="col-md-6 col-lg-4" 
-                 data-aos="fade-up" 
-                 data-aos-delay="150">
-                <div class="blog-card shadow">
-                    <img src="images/post-2.jpg" class="card-img-top" alt="Home Office">
-                    <div class="card-body">
-                        <div class="blog-meta mb-2">
-                            <span class="me-3">March 28, 2024</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h5 class="card-title">Productive Home Office Setup</h5>
-                        <p class="card-text">Ergonomic solutions for remote work environments...</p>
-                        <a href="#" class="btn btn-link text-primary">Read More →</a>
-                    </div>
-                </div>
-            </div>
+.badge-offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    z-index: 2;
+}
 
-            <!-- Blog Post 3 -->
-            <div class="col-md-6 col-lg-4" 
-                 data-aos="fade-up" 
-                 data-aos-delay="250">
-                <div class="blog-card shadow">
-                    <img src="images/post-1.jpg" class="card-img-top" alt="Luxury Furniture">
-                    <div class="card-body">
-                        <div class="blog-meta mb-2">
-                            <span class="me-3">March 25, 2024</span>
-                            <span>5 min read</span>
-                        </div>
-                        <h5 class="card-title">Luxury on a Budget</h5>
-                        <p class="card-text">Achieve high-end looks without the premium price tag...</p>
-                        <a href="#" class="btn btn-link text-primary">Read More →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+.offer-card {
+	position: relative;
+	z-index: 1;
 
-<!-- Newsletter Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="newsletter-section" data-aos="fade-up">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2>Subscribe to Our Blog</h2>
-                    <p>Get weekly design inspiration delivered to your inbox</p>
-                </div>
-                <div class="col-md-6">
-                    <form class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    transition: transform 0.3s;
+    border: none;
+    overflow: hidden;
+}
 
-<hr>
-    <!-- Start Footer Section -->
+.offer-card:hover {
+    transform: translateY(-10px);
+}
+
+.price {
+    font-size: 1.2rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: bold;
+}
+
+.carousel-content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-content {
+        height: 300px;
+        padding: 2rem;
+    }
+}
+</style>
+
+
+    <!-- Start Breadcrumb Section -->
+     
+
+    <hr>
+	<!-- Start Footer Section -->
 	<footer class="footer-section">
 		<div class="container relative">
 
@@ -397,8 +368,9 @@
 		</button>
 	</div>
 
-	<!-- End Live Chat Button -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="JAVASCRIPT/script.js"></script>
@@ -412,11 +384,7 @@
 			once: true,
 			mirror: false,
 			anchorPlacement: 'top-bottom',
-			disable: 'mobile',
-			duration: 800,
-        once: true,
-        easing: 'ease-in-out'
-
+			disable: 'mobile'
 		});
 	</script>
 

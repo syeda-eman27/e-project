@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="CSS/style.css">
 	<link href="style.css" rel="stylesheet">
-	<title>Furni design</title>
+	<title>DINING design</title>
 </head>
 <style>
 	.cont{
@@ -146,7 +146,7 @@
 
 <body>
 	<!-- Start Header Section -->
-	<header class="header">
+	<header class="header" data-aos="fade-down" data-aos-duration="800">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
 				<div class="logo navbar-brand">
@@ -156,14 +156,14 @@
 					</h1>
 					<p class="logo-subtext">Furniture For Everyone</p>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav m-auto  ">
 						<li class="nav-item dropdown">
-							<a class="nav-link  nav-link-amber" href="index.html" >Home</a>
+							<a class="nav-link  nav-link-amber" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link nav-link-amber" href="About-us.html">About Us</a>
@@ -172,14 +172,16 @@
 							<a class="nav-link nav-link-amber" href="Blog.html">Blog</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button" 
+							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button"
 								data-toggle="dropdown" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="#">My Account</a></li>
-									<li><a class="dropdown-item" href="#">For Sales</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><a class="dropdown-item" href="#">Services..</a></li>
-								  </ul>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="signup.html">My Account</a></li>
+								<li><a class="dropdown-item" href="offer.html">For Sales</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="services.html">Services..</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link nav-link-amber" href="ContectUs.html">Contact Us</a>
@@ -189,9 +191,11 @@
 						<button aria-label="Search" class="icon-button" onclick="openSearch()">
 							<i class="fas fa-search icon"></i>
 						</button>
-						<button aria-label="Shopping Cart" class="icon-button">
-							<i class="fas fa-shopping-cart icon"></i>
-						</button>
+						<a href="AddToCart.html">
+							<button aria-label="Shopping Cart" class="icon-button">
+								<i class="fas fa-shopping-cart icon"></i>
+							</button>
+						</a>
 						<button aria-label="User Account" class="icon-button">
 							<i class="fas fa-user icon"></i>
 						</button>
@@ -426,13 +430,13 @@
 	<footer class="footer-section">
 		<div class="container relative">
 
-			<div class="sofa-img">
+			<div class="sofa-img" data-aos="fade-up">
 				<img src="images/sofa.png" alt="Image" class="img-fluid">
 			</div>
 
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="subscription-form">
+					<div class="subscription-form" data-aos="fade-up" data-aos-duration="1000">
 						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
 									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
 
@@ -455,11 +459,12 @@
 			</div>
 
 			<div class="row g-5 mb-5">
-				<div class="col-lg-4">
-					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
-					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
-						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
-						Pellentesque habitant</p>
+				<div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+					<div class="mb-4 footer-logo-wrap"><a href="#"
+							class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+					<p class="mb-4">Facilisis made easy as pure rutrum lobortis. Live without fear, just like a
+						smooth-flowing stream. The essence of existence lies in adaptability. Every challenge is an
+						opportunity to grow. Embrace the journey.</p>
 
 					<ul class="list-unstyled custom-social">
 						<li><a href="#" aria-label="Visit our Facebook page"><span
@@ -473,7 +478,7 @@
 					</ul>
 				</div>
 
-				<div class="col-lg-8">
+				<div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
 					<div class="row links-wrap">
 						<div class="col-6 col-sm-6 col-md-3">
 							<ul class="list-unstyled">
@@ -517,7 +522,7 @@
 				<div class="row pt-4">
 					<div class="col-lg-6">
 						<p class="mb-2 text-center text-lg-start">Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; 
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
 							<span>BeFurniture</span>
 						</p>
 					</div>
@@ -543,8 +548,7 @@
 			Live Chat
 		</button>
 	</div>
-
-	<!-- End Live Chat Button -->
+<!-- End Live Chat Button -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>

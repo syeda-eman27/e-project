@@ -15,11 +15,28 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<title>Furni design</title>
+	<title>sign-up</title>
+   
+    <style>
+        .cont1 {
+            max-width: 900px;
+        }
+        .row1 {
+            width: 100%;
+            max-width: 800px;
+        }
+        .col-md-6 {
+            min-height: 450px;
+        }
+        button {
+            border-radius: 5px;
+        }
+    </style>
+
 </head>
 <body>
 <!-- Start Header Section -->
-<header class="header">
+<header class="header" data-aos="fade-down" data-aos-duration="800">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <div class="logo navbar-brand">
@@ -29,14 +46,14 @@
                 </h1>
                 <p class="logo-subtext">Furniture For Everyone</p>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto  ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link  nav-link-amber" href="index.html" >Home</a>
+                        <a class="nav-link  nav-link-amber" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-amber" href="About-us.html">About Us</a>
@@ -45,14 +62,16 @@
                         <a class="nav-link nav-link-amber" href="Blog.html">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button" 
+                        <a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button"
                             data-toggle="dropdown" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">My Account</a></li>
-                                <li><a class="dropdown-item" href="#">For Sales</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Services..</a></li>
-                              </ul>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="signup.html">My Account</a></li>
+                            <li><a class="dropdown-item" href="offer.html">For Sales</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="services.html">Services..</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-amber" href="ContectUs.html">Contact Us</a>
@@ -62,9 +81,11 @@
                     <button aria-label="Search" class="icon-button" onclick="openSearch()">
                         <i class="fas fa-search icon"></i>
                     </button>
-                    <button aria-label="Shopping Cart" class="icon-button">
-                        <i class="fas fa-shopping-cart icon"></i>
-                    </button>
+                    <a href="AddToCart.html">
+                        <button aria-label="Shopping Cart" class="icon-button">
+                            <i class="fas fa-shopping-cart icon"></i>
+                        </button>
+                    </a>
                     <button aria-label="User Account" class="icon-button">
                         <i class="fas fa-user icon"></i>
                     </button>
@@ -73,19 +94,71 @@
         </div>
     </nav>
 </header>
-<!-- End Header Section -->
+<!-- End Header Section --> 
+ 
+<!--start section -->
+    <div class="container cont1 d-flex justify-content-center align-items-center vh-100 ">
+        <div class="row row1 shadow-lg rounded-3 overflow-hidden bg-transparent">
+            <div class="col-md-6 p-5">
+                <div class="text-center">
+                    <h3 class="mt-3" style="font-family: sans-serif;" data-aos="fade-down">Sign Up</h3>
+                </div>
+                
+                <form id="signupForm" data-aos="fade-up" data-aos-duration="800">
+                    <div class="mb-3" data-aos="fade-right" data-aos-delay="200">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3" data-aos="fade-left" data-aos-delay="300">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3" data-aos="fade-right" data-aos-delay="400">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3" data-aos="fade-left" data-aos-delay="500">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" data-aos="zoom-in" data-aos-delay="600">Create Account</button>
+                    <hr>
+                </form>
 
-    <!-- Start Footer Section -->
+                <div class="text-center mt-3">
+                    <p data-aos="fade-up" data-aos-delay="700">Already have an account? <a href="Sign-in.html">Login</a></p>
+                    <button class="btn btn-secondary w-100 mt-2" data-aos="zoom-in" data-aos-delay="800">
+                        <i class="fa-brands fa-google"></i> Sign up with Google
+                    </button>
+                    <!-- <button class="btn btn-primary w-100 mt-2" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fa-brands fa-facebook-f"></i> Sign up with Facebook
+                    </button> -->
+                    <button class="btn btn-dark w-100 mt-2" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fa-brands fa-apple"></i> Sign up with Apple
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-2 text-center">
+                <h4 data-aos="fade-left" data-aos-delay="200">Securely Store Your Documents <br>With <span class="text-primary">BE.FURNI</span></h4>
+                <img src="images/chair2-removebg-preview.png" alt="Cloud Illustration" class="img-fluid mt-4" width="350" 
+                     data-aos="zoom-in" data-aos-delay="400">
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+     <hr>
+<!-- Start Footer Section -->
 <footer class="footer-section">
     <div class="container relative">
 
-        <div class="sofa-img">
+        <div class="sofa-img" data-aos="fade-up">
             <img src="images/sofa.png" alt="Image" class="img-fluid">
         </div>
 
         <div class="row">
             <div class="col-lg-8">
-                <div class="subscription-form">
+                <div class="subscription-form" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
                                 alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
 
@@ -108,11 +181,12 @@
         </div>
 
         <div class="row g-5 mb-5">
-            <div class="col-lg-4">
-                <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
-                <p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
-                    malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
-                    Pellentesque habitant</p>
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="mb-4 footer-logo-wrap"><a href="#"
+                        class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+                <p class="mb-4">Facilisis made easy as pure rutrum lobortis. Live without fear, just like a
+                    smooth-flowing stream. The essence of existence lies in adaptability. Every challenge is an
+                    opportunity to grow. Embrace the journey.</p>
 
                 <ul class="list-unstyled custom-social">
                     <li><a href="#" aria-label="Visit our Facebook page"><span
@@ -126,7 +200,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
                 <div class="row links-wrap">
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
@@ -170,7 +244,7 @@
             <div class="row pt-4">
                 <div class="col-lg-6">
                     <p class="mb-2 text-center text-lg-start">Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; 
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
                         <span>BeFurniture</span>
                     </p>
                 </div>
@@ -205,14 +279,26 @@
 <!-- AOS Animation -->
 <script>
     AOS.init({
-        offset: 100,
-        delay: 0,
-        duration: 800,
-        easing: 'ease-in-out',
+        duration: 1000,
         once: true,
-        mirror: false,
-        anchorPlacement: 'top-bottom',
-        disable: 'mobile'
+        easing: 'ease-in-out'
+    });
+
+    // Signup Form Handling
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        // Simulate successful signup
+        alert("Signup Successful! Redirecting to login...");
+        window.location.href = "login.html";
     });
 </script>
 
