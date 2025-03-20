@@ -436,3 +436,18 @@ a{
     transition: transform 0.3s ease;
     background: #3b5d5017; 
 }
+
+@media (max-width: 768px) {
+    .carousel .list .item {
+      flex-direction: column;
+    }
+    
+    .carousel .content {
+      padding: 20px;
+    }
+  }
+  .topic {
+    height: auto !important; 
+    flex-direction: column;
+  }
+  

@@ -1322,3 +1322,64 @@ about-us */
   color: #2a4137;
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header .navbar-nav {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .header-right {
+    justify-content: center;
+    margin-top: 15px;
+  }  
+  .main-section .content-section h1 {
+    font-size: 2rem;
+  }
+
+  /* Cards grid adjustments */
+  .col-md-6, .col-lg-4, .col-xl-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Product cards */
+  .product-card {
+    height: auto;
+    margin: 15px 0;
+  }
+
+  /* Footer adjustments */
+  .footer-section .links-wrap > div {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile menu adjustments */
+  .navbar-brand .logo-subtext {
+    font-size: 0.8rem;
+  }
+
+  /* Form elements */
+  .form-control {
+    font-size: 14px;
+  }
+
+  /* Card titles */
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  /* Image adjustments */
+  .img-top {
+    height: auto;
+  }
+
+  /* Carousel adjustments */
+  .carousel-content {
+    height: auto;
+    padding: 20px;
+  }
+}
