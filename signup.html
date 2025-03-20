@@ -11,8 +11,7 @@
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Serif&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<!-- TinySlider CSS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="css/loaders.css">
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>sign-up</title>
@@ -35,6 +34,9 @@
 
 </head>
 <body>
+    <div id="loading">
+        <div class="loader"></div> 
+        </div>
 <!-- Start Header Section -->
 <header class="header" data-aos="fade-down" data-aos-duration="800">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -300,6 +302,15 @@
         alert("Signup Successful! Redirecting to login...");
         window.location.href = "login.html";
     });
+    // Loader Hide Script
+			window.addEventListener('load', function() {
+				const loading = document.getElementById('loading');
+				loading.style.opacity = '0';
+				setTimeout(() => {
+					loading.style.display = 'none';
+				}, 1500);
+			});
+
 </script>
 
 </body>
